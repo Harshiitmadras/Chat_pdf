@@ -1,47 +1,4 @@
-# 📘 ChatPDF – Mini PDF Q&A App (Next.js + OpenAI + Supabase)
 
-This is a **full-stack Next.js application** that allows users to upload a PDF and then ask questions about its content.  
-It uses **OpenAI embeddings** with a **Supabase pgvector store** and a **retrieval-augmented generation (RAG)** pipeline to answer questions in natural language.
-
-Built as part of the **Force Equals Full Stack AI Engineer Intern Assignment**.
-
----
-
-## 🎯 Objective
-- Upload a PDF, process its content, and generate embeddings.
-- Store embeddings in a vector database for retrieval.
-- Allow users to ask questions and receive contextual answers.
-- Protect API routes and provide a clean, responsive UI.
-
----
-
-## 🚀 Features
-- 📂 Upload PDFs and extract text  
-- 🧠 Embed text using OpenAI Embeddings API  
-- 📦 Store embeddings in **Supabase pgvector**  
-- 🤖 Retrieval-Augmented QA (RAG) using OpenAI Chat models  
-- 🔒 Protected API routes with simple login  
-- ⚡ Streaming answers for real-time UX  
-- 🎨 Modern UI with **Next.js, TailwindCSS, shadcn/ui**  
-- 📱 Mobile responsive  
-
----
-
-## 🛠 Tech Stack
-- **Frontend**: Next.js 13 (App Router), TailwindCSS, shadcn/ui  
-- **Backend**: Next.js API routes  
-- **Vector Store**: Supabase pgvector  
-- **LLM**: OpenAI GPT models (`gpt-4o-mini` by default)  
-- **Auth**: Session cookie with `ADMIN_KEY`  
-
----
-
-## ⚙️ Setup Instructions
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Harshiitmadras/Chat_pdf.git
-   cd Chat_pdf
 
 ### Install required packages:
 
@@ -123,7 +80,7 @@ ChatPDF has 2 main functionality:
 
 <img width="1727" alt="Screenshot" src="https://github.com/trangiabach/chat-pdf/assets/62537937/e0518c85-295f-4b39-8254-0b9b05a93f49">
 
-[ChatPDF Demo](https://chat-to-pdf.vercel.app/) | [Walkthrough Video](https://drive.google.com/file/d/1fSoZTbu8a_s8J6-6utZfVOLvijlDH97j/view?usp=sharing)
+[Walkthrough Video](https://drive.google.com/file/d/1fSoZTbu8a_s8J6-6utZfVOLvijlDH97j/view?usp=sharing)
 
 ---
 
