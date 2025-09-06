@@ -1,22 +1,47 @@
-# ChatPDF
+# 📘 ChatPDF – Mini PDF Q&A App (Next.js + OpenAI + Supabase)
 
-<img width="1727" alt="Screenshot 2024-04-23 at 8 41 42 PM" src="https://github.com/trangiabach/chat-pdf/assets/62537937/e0518c85-295f-4b39-8254-0b9b05a93f49">
+This is a **full-stack Next.js application** that allows users to upload a PDF and then ask questions about its content.  
+It uses **OpenAI embeddings** with a **Supabase pgvector store** and a **retrieval-augmented generation (RAG)** pipeline to answer questions in natural language.
 
+Built as part of the **Force Equals Full Stack AI Engineer Intern Assignment**.
 
-[ChatPDF](https://chat-to-pdf.vercel.app/) is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+---
 
+## 🎯 Objective
+- Upload a PDF, process its content, and generate embeddings.
+- Store embeddings in a vector database for retrieval.
+- Allow users to ask questions and receive contextual answers.
+- Protect API routes and provide a clean, responsive UI.
 
-Features Walkthrough Demo: [https://drive.google.com/file/d/1fSoZTbu8a_s8J6-6utZfVOLvijlDH97j/view?usp=sharing](https://drive.google.com/file/d/1fSoZTbu8a_s8J6-6utZfVOLvijlDH97j/view?usp=sharing)
+---
 
-## Local Development 💻
+## 🚀 Features
+- 📂 Upload PDFs and extract text  
+- 🧠 Embed text using OpenAI Embeddings API  
+- 📦 Store embeddings in **Supabase pgvector**  
+- 🤖 Retrieval-Augmented QA (RAG) using OpenAI Chat models  
+- 🔒 Protected API routes with simple login  
+- ⚡ Streaming answers for real-time UX  
+- 🎨 Modern UI with **Next.js, TailwindCSS, shadcn/ui**  
+- 📱 Mobile responsive  
 
-Here is a guide to run ChatPDF locally:
+---
 
-### Clone the repository:
+## 🛠 Tech Stack
+- **Frontend**: Next.js 13 (App Router), TailwindCSS, shadcn/ui  
+- **Backend**: Next.js API routes  
+- **Vector Store**: Supabase pgvector  
+- **LLM**: OpenAI GPT models (`gpt-4o-mini` by default)  
+- **Auth**: Session cookie with `ADMIN_KEY`  
 
-```bash
-git clone https://github.com/Harshiitmadras/Chat_pdf.git
-```
+---
+
+## ⚙️ Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Harshiitmadras/Chat_pdf.git
+   cd Chat_pdf
 
 ### Install required packages:
 
