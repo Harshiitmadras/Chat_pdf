@@ -37,7 +37,7 @@ Built as part of the **Force Equals Full Stack AI Engineer Intern Assignment**.
 git clone https://github.com/Harshiitmadras/Chat_pdf.git
 cd Chat_pdf
 ---
-###2. Install dependencies
+##2. Install dependencies
 
 npm install
 
