@@ -15,7 +15,7 @@ Here is a guide to run ChatPDF locally:
 ### Clone the repository:
 
 ```bash
-git clone https://github.com/trangiabach/chat-pdf.git
+git clone https://github.com/Harshiitmadras/Chat_pdf.git
 ```
 
 ### Install required packages:
