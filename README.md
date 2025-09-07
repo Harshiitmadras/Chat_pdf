@@ -104,7 +104,7 @@ For production, consider NextAuth / Auth0 / Clerk.
 
 ---
 
-#🛠️ Tech Stack
+🛠️ Tech Stack
 
 Frontend: Next.js (React, TypeScript), TailwindCSS, shadcn/ui
 
