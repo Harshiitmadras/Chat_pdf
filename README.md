@@ -38,12 +38,12 @@ git clone https://github.com/Harshiitmadras/Chat_pdf.git
 cd Chat_pdf
 ```
 ---
-##2. Install dependencies
+2. Install dependencies
 ```bash
 npm install
 ```
 
-##3. Setup environment variables
+3. Setup environment variables
 
 Create a file named .env.local in the root of your project:
 ```bash
@@ -52,7 +52,7 @@ SUPABASE_URL=your-supabase-url
 SUPABASE_KEY=your-supabase-service-role-key
 ADMIN_KEY=your-secret-password
 ```
-##4. Run the development server
+4. Run the development server
 ```bash
 npm run dev
 ```
@@ -61,9 +61,9 @@ Now visit http://localhost:3000 🚀
 
 ---
 
-#⚙️ Approach & Architecture
+⚙️ Approach & Architecture
 
-#1. PDF Processing & Embedding (app/api/pdfs/embed)
+1. PDF Processing & Embedding (app/api/pdfs/embed)
 
 Uploaded PDFs are processed server-side with pdfjs.
 
@@ -74,7 +74,7 @@ Each chunk is embedded with OpenAI and stored in Supabase pgvector along with me
 The raw PDF is stored in a Supabase bucket for later use.
 
 
-#2. Retrieval-Augmented Generation (RAG) (app/api/chat)
+2. Retrieval-Augmented Generation (RAG) (app/api/chat)
 
 User sends a query, along with the chosen PDF and model.
 
@@ -90,26 +90,7 @@ The LLM streams back an answer token-by-token to the frontend.
 
 ---
 
-#📂 Project Structure
-
-Chat_pdf/
-├── app/
-│   ├── api/          # API routes (upload, embed, chat)
-│   ├── components/   # Reusable UI components
-│   ├── page.tsx      # Main UI page
-├── lib/              # OpenAI + Supabase helpers
-├── providers/        # Context providers
-├── db/               # Supabase schema & connection
-├── types/            # TypeScript types
-├── public/           # Static assets
-├── middleware.ts     # Protects API routes
-├── .env.example      # Env template
-└── README.md
-
-
----
-
-#🔒 Authentication
+🔒 Authentication
 
 API routes (/api/upload, /api/chat) are protected with a simple ADMIN_KEY.
 
