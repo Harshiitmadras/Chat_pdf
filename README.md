@@ -36,24 +36,26 @@ Built as part of the **Force Equals Full Stack AI Engineer Intern Assignment**.
 ```bash
 git clone https://github.com/Harshiitmadras/Chat_pdf.git
 cd Chat_pdf
+```
 ---
 ##2. Install dependencies
-
+```bash
 npm install
+```
 
 ###3. Setup environment variables
 
 Create a file named .env.local in the root of your project:
-
+```bash
 OPENAI_API_KEY=your-openai-key
 SUPABASE_URL=your-supabase-url
 SUPABASE_KEY=your-supabase-service-role-key
 ADMIN_KEY=your-secret-password
-
+```
 ###4. Run the development server
-
+```bash
 npm run dev
-
+```
 Now visit http://localhost:3000 🚀
 
 
@@ -88,7 +90,7 @@ The LLM streams back an answer token-by-token to the frontend.
 
 ---
 
-#📂 Project Structure
+####📂 Project Structure
 
 Chat_pdf/
 ├── app/
@@ -107,7 +109,7 @@ Chat_pdf/
 
 ---
 
-#🔒 Authentication
+###🔒 Authentication
 
 API routes (/api/upload, /api/chat) are protected with a simple ADMIN_KEY.
 
@@ -121,7 +123,7 @@ For production, consider NextAuth / Auth0 / Clerk.
 
 ---
 
-#🛠️ Tech Stack
+###🛠️ Tech Stack
 
 Frontend: Next.js (React, TypeScript), TailwindCSS, shadcn/ui
 
