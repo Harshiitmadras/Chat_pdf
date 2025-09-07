@@ -43,7 +43,7 @@ cd Chat_pdf
 npm install
 ```
 
-###3. Setup environment variables
+##3. Setup environment variables
 
 Create a file named .env.local in the root of your project:
 ```bash
@@ -52,7 +52,7 @@ SUPABASE_URL=your-supabase-url
 SUPABASE_KEY=your-supabase-service-role-key
 ADMIN_KEY=your-secret-password
 ```
-###4. Run the development server
+##4. Run the development server
 ```bash
 npm run dev
 ```
@@ -61,7 +61,7 @@ Now visit http://localhost:3000 🚀
 
 ---
 
-##⚙️ Approach & Architecture
+#⚙️ Approach & Architecture
 
 #1. PDF Processing & Embedding (app/api/pdfs/embed)
 
@@ -90,7 +90,7 @@ The LLM streams back an answer token-by-token to the frontend.
 
 ---
 
-####📂 Project Structure
+#📂 Project Structure
 
 Chat_pdf/
 ├── app/
@@ -109,7 +109,7 @@ Chat_pdf/
 
 ---
 
-###🔒 Authentication
+#🔒 Authentication
 
 API routes (/api/upload, /api/chat) are protected with a simple ADMIN_KEY.
 
@@ -123,7 +123,7 @@ For production, consider NextAuth / Auth0 / Clerk.
 
 ---
 
-###🛠️ Tech Stack
+#🛠️ Tech Stack
 
 Frontend: Next.js (React, TypeScript), TailwindCSS, shadcn/ui
 
